@@ -2,6 +2,7 @@
 Deep Learning Based Smart Agricultural Diagnostic Tool
 📌 Project Overview
 The Rice Leaf Disease Detection System is a deep learning–powered web application designed to identify and classify rice leaf diseases using image input.
+
 The system uses EfficientNet-B3 with transfer learning to classify rice leaf images into 8 disease categories. The trained model is integrated with a Flask-based web application, allowing farmers to upload leaf images and receive:
 
 ✅ Disease Name
@@ -9,6 +10,7 @@ The system uses EfficientNet-B3 with transfer learning to classify rice leaf ima
 ✅ Organic Treatment Suggestions
 ✅ Chemical Treatment Recommendations
 ✅ Downloadable PDF Report
+
 This project bridges the gap between AI research and real-world agricultural application.
 
 🎯 Problem Statement
