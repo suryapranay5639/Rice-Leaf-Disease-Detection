@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rice Disease Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rice Leaf Disease Detector</h1>
+        <p>Upload a photo of a rice leaf for AI analysis.</p>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit" class="btn">Analyze Leaf</button>
+        </form>
+    </div>
+    <div style="margin-top: 30px;">
+        <a href="/history" class="btn" style="background-color: #34495e;">View Scan History / చరిత్రను వీక్షించండి</a>
+    </div>
+</body>
+
+</html>

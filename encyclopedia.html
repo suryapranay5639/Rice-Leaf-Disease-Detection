@@ -1,0 +1,19 @@
+<nav>
+    <a href="/">Scanner</a>
+    <a href="/history">History</a>
+    <a href="/encyclopedia">Encyclopedia</a>
+    <a href="/contact">Contact</a>
+</nav>
+
+<div class="container" style="max-width: 1000px;">
+    <h1>Rice Disease Encyclopedia</h1>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        {% for name, details in diseases.items() %}
+        <div class="card" style="text-align: left;">
+            <h2 style="color: #27ae60;">{{ name }}</h2>
+            <p><strong>Organic Treatment:</strong> {{ details.org_en }}</p>
+            <p><strong>Chemical Treatment:</strong> {{ details.chem_en }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>

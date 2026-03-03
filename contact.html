@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us - Rice Disease Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .contact-info {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form textarea {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/">Scanner</a>
+        <a href="/history">History</a>
+        <a href="/encyclopedia">Encyclopedia</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="container" style="max-width: 900px;">
+        <h1>Contact Agricultural Support</h1>
+        <p>Have questions about your diagnosis? Reach out to our team of experts.</p>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Expert Support</h3>
+                <p><strong>📍 Location:</strong> Agricultural Research Center</p>
+                <p><strong>📞 Phone:</strong> +91 1800-XXX-XXXX</p>
+                <p><strong>📧 Email:</strong> support@ricedoctor.ai</p>
+                <hr>
+                <p><i>Our experts usually respond to disease queries within 24 hours.</i></p>
+            </div>
+
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Describe your crop issue..."></textarea>
+                    <button type="button" class="btn" onclick="alert('Message Sent Successfully!')">Submit
+                        Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
