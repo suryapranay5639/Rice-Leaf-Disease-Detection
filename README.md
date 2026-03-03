@@ -68,18 +68,33 @@ Disease Knowledge Base (JSON Dictionary)
 
 📁 Project Structure
 Rice-Leaf-Disease-Detection/
+
 │
+
 ├── app.py
+
 ├── model_final.h5
+
 ├── requirements.txt
+
 ├── templates/
+
 │   ├── index.html
+
 │   ├── result.html
+
 │   ├── history.html
+
 │
+
 ├── static/
+
 │   ├── css/
+
 │   ├── uploads/
+
 │
+
 ├── database.db
+
 └── README.md
